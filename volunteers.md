@@ -122,6 +122,10 @@ Enrico|Fornoni|Università degli Studi di Brescia|Italy
 Claire|Hordern|University of Manchester Library|UK
 Martina|Hediger|Universität Zürich|Switzerland
 Stefanie|Mauritz|Cardiff University|CRDF
+Kathleen|Thornton|University of Tennessee|US
+Manuela|Michelloni|The Norwegian Institute in Rome, University of Oslo|Italy
+Loreta|Menghi|Università Politecnica delle Marche	UNIPVM|Italy
+Alfred|Dalmacio|University of the Philippines Manila Library|The Philippines
 
 Thanks also goes to the [IFLA DDRS Standing Committee members](https://www.ifla.org/standing-committee/15) for providing their expertise in starting, promoting and subsequently providing their resources for the initiative.
 
