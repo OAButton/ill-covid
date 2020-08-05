@@ -126,6 +126,10 @@ Kathleen|Thornton|University of Tennessee|US
 Manuela|Michelloni|The Norwegian Institute in Rome, University of Oslo|Italy
 Loreta|Menghi|Università Politecnica delle Marche	UNIPVM|Italy
 Alfred|Dalmacio|University of the Philippines Manila Library|The Philippines
+Mary|Guthmiller|Montana State University Library|US																				
+Kimberly|Day|Liberty Univerity library|US																				
+Morgan|Aronson|US Naval Observatory Library|US																				
+Kabiru|Danladi|Skyline University Nigeria Library|Nigeria	
 
 Thanks also goes to the [IFLA DDRS Standing Committee members](https://www.ifla.org/standing-committee/15) for providing their expertise in starting, promoting and subsequently providing their resources for the initiative.
 
