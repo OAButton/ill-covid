@@ -130,6 +130,7 @@ Mary|Guthmiller|Montana State University Library|US
 Kimberly|Day|Liberty Univerity library|US																				
 Morgan|Aronson|US Naval Observatory Library|US																				
 Kabiru|Danladi|Skyline University Nigeria Library|Nigeria	
+Celia	Phillips|National Library of Scotland|UK
 
 Thanks also goes to the [IFLA DDRS Standing Committee members](https://www.ifla.org/standing-committee/15) for providing their expertise in starting, promoting and subsequently providing their resources for the initiative.
 
