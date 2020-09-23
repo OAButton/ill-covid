@@ -39,9 +39,9 @@ Banu|Tunalı|Ozyegin University Library|Turkey
 Burak|Kazlı|Ozyegin University Library|Turkey
 Hakan|Kiran|Bilgi Merkezi, Kadir Has Üniversitesi|Turkey
 Kathalin|Haldeman|Boston University School of Law|US
-Jade|Ward|Leeds University Library|UK
-Eddie|Whitaker|Leeds University Library|UK
-Sarah|Sykes|Leeds University Library|UK
+Jade|Ward|University of Leeds Library|UK
+Eddie|Whitaker|University of Leeds Library|UK
+Sarah|Sykes|University of Leeds Library|UK
 Lisa|Roulstone|University of Canberra Library|Australia
 Lauren|Levinson|Drew University Library|US
 Lucía|Meijueiro Barros|Manchester Metropolitan University|UK
