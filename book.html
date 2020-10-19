@@ -1,50 +1,62 @@
 ---
-layout: form
+layout: default
 ---
 
 <h1>Book Chapter Request</h1>
 
 <form id="submission">
 
-<label>Book Title</label>
-<p><input class="oabutton_form" type="text" id="title" placeholder="Biology for dummies"></p>
+<label>Book Title
+<p><input class="_oab_form" type="text" id="title" placeholder="Biology for dummies"></p>
+</label>
 
-<label>ISBN</label>
-<p><input class="oabutton_form" type="text" id="ISBN" placeholder="e.g 978-3-16-148410-0"></p>
+<label>ISBN
+<p><input class="_oab_form" type="text" id="ISBN" placeholder="e.g 978-3-16-148410-0"></p>
+</label>
 
-<label>Chapter Title</label>
-<p><input class="oabutton_form" type="text" id="chapter" placeholder="e.g Evolution"></p>
+<label>Chapter Title
+<p><input class="_oab_form" type="text" id="chapter" placeholder="e.g Evolution"></p>
+</label>
 
-<label>Page Numbers</label>
-<p><input class="oabutton_form" type="text" id="pages" placeholder="e.g 314-412"></p>
+<label>Page Numbers
+<p><input class="_oab_form" type="text" id="pages" placeholder="e.g 314-412"></p>
+</label>
 
-<label>Authors</label>
-<p><input class="oabutton_form" type="text" id="authors" placeholder="e.g Charles Darwin"></p>
+<label>Authors
+<p><input class="_oab_form" type="text" id="authors" placeholder="e.g Charles Darwin"></p>
+</label>
 
-<label>Edition</label>
-<p><input class="oabutton_form" type="text" id="edition" placeholder="e.g 1"></p>
+<label>Edition
+<p><input class="_oab_form" type="text" id="edition" placeholder="e.g 1"></p>
+</label>
 
-<label>Year Published</label>
-<p><input class="oabutton_form" type="text" id="year" placeholder="e.g 1992"></p>
+<label>Year Published
+<p><input class="_oab_form" type="text" id="year" placeholder="e.g 1992"></p>
+</label>
 
 <h1>About you</h1>
 
-<label>Institutional Email Address</label>
-<p><input required="required" class="oabutton_form" type="email" id="email" placeholder="e.g. your.email@institution.edu"></p>
+<label>Institutional Email Address
+<p><input required="required" class="_oab_form" type="email" id="email" placeholder="e.g. your.email@institution.edu"></p>
+</label>
 
-<label>Full Name</label>
-<p><input required="required" class="oabutton_form" type="text" id="name" placeholder="e.g. Carla Hayden"></p>
+<label>Full Name
+<p><input required="required" class="_oab_form" type="text" id="name" placeholder="e.g. Carla Hayden"></p>
+</label>
 
-<label>Library Name</label>
-<p><input required="required" class="oabutton_form" type="text" id="organization" placeholder="e.g. Harvard University Library"></p>
+<label>Library Name
+<p><input required="required" class="_oab_form" type="text" id="organization" placeholder="e.g. Harvard University Library"></p>
+</label>
 
-<label>Your Reference Number (if any)</label>
-<p><input class="oabutton_form" type="text" id="reference" placeholder="e.g. 02397133-002"></p>
+<label>Your Reference Number (if any)
+<p><input class="_oab_form" type="text" id="reference" placeholder="e.g. 02397133-002"></p>
+</label>
 
-<label>Notes</label>
-<p><input class="oabutton_form" type="text" id="other" placeholder="e.g. Please process quickly!"></p>
+<label>Notes
+<p><input class="_oab_form" type="text" id="other" placeholder="e.g. Please process quickly!"></p>
+</label>
 
-<input class="oabutton_find" href="thanks" id="submit" aria-label="submit" style="min-width:150px;" type="submit" value="Submit Request">
+<input class="_oab_button" href="thanks" id="submit" aria-label="submit" style="min-width:150px;" type="submit" value="Submit Request">
 <p><i>If you have trouble submitting <a href="mailto:joe@openaccessbutton.org">let us know</a>.</i></p>
 
 </form>
@@ -54,3 +66,5 @@ var sid = 'AKfycbwPq7xWoTLwnqZHv7gJAwtsHRkreJ1hMJVeeplxDG_MipdIamU6';
 var url = 'https://api.openaccessbutton.org/ill/collect/' + sid;
 var fields = [];
 </script>
+
+{% include form.html %}

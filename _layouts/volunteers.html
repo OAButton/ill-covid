@@ -5,8 +5,7 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,maximum-scale=2">
-    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 {% seo %}
   </head>
 
@@ -15,7 +14,8 @@
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
-          <h1 id="project_title">Volunteers</h1>
+          <a id="nav_tab" href="/">Home</a>
+          <h1 id="project_title">Volunteer</h1>
           <h2 id="project_tagline">As the number of requests grows every hour, we need your help more than ever.</h2>
         </header>
     </div>
@@ -30,11 +30,7 @@
 
     <!-- FOOTER CONTENT -->
 
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Created by the <a href="https://www.ifla.org/docdel" target="_blank">IFLA Document Delivery and Resource Sharing Section Standing Committee</a> with the help of <a href="https://instantill.org" target="_blank">InstantILL</a>. Powered by <a href="/volunteers">volunteers</a>.</p>
-      </footer>
-    </div>
+    {% include footer.html %}
 
   </body>
 </html>

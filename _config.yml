@@ -2,3 +2,4 @@ title: Resource Sharing during COVID-19 (RSCVD)
 description: Interlibrary loan professionals in not-for-profit libraries <br>can request access to materials from volunteering libraries.
 show_downloads: false
 theme: jekyll-theme-slate
+exclude: status.html

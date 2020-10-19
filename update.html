@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<h1>Update your request</h1>
+
+<form id="submission">
+
+<input class="_oab_form" id="title" type="hidden">
+<input class="_oab_form" id="time" type="hidden">
+<input class="_oab_form" id="update" type="hidden">
+
+<input class="_oab_button" href="/" id="submit" aria-label="submit" style="min-width:150px;" type="submit" value="Submit Update">
+
+</form>
+
+<script>
+var sid = 'AKfycbzLmDUA_GvKslQ9boFJ1lq9limyFbZOWCWicscAW4EDRIZt5r0';
+var url = 'https://api.openaccessbutton.org/ill/collect/' + sid;
+var fields = ["title","time","update"];
+</script>
+
+{% include form.html %}

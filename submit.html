@@ -1,57 +1,70 @@
 ---
-layout: form
+layout: default
 ---
 
 <h1>About you</h1>
 
 <form id="submission">
 
-<label>Institutional Email Address (Required)</label>
-<p><input required="required" class="oabutton_form" type="email" id="email" placeholder="e.g. your.email@institution.edu"></p>
+<label>Institutional Email Address (Required)
+<p><input required="required" class="_oab_form" type="email" id="email" placeholder="e.g. your.email@institution.edu"></p>
+</label>
 
-<label>Full Name (Required)</label>
-<p><input required="required" class="oabutton_form" type="text" id="name" placeholder="e.g. Carla Hayden"></p>
+<label>Full Name (Required)
+<p><input required="required" class="_oab_form" type="text" id="name" placeholder="e.g. Carla Hayden"></p>
+</label>
 
-<label>Library Name (Required)</label>
-<p><input required="required" class="oabutton_form" type="text" id="organization" placeholder="e.g. Harvard University Library"></p>
+<label>Library Name (Required)
+<p><input required="required" class="_oab_form" type="text" id="organization" placeholder="e.g. Harvard University Library"></p>
+</label>
 
-<label>Your Reference Number (if any)</label>
-<p><input class="oabutton_form" type="text" id="reference" placeholder="e.g. 02397133-002"></p>
+<label>Your Reference Number (if any)
+<p><input class="_oab_form" type="text" id="reference" placeholder="e.g. 02397133-002"></p>
+</label>
 
-<label>Notes</label>
-<p><input class="oabutton_form" type="text" id="other" placeholder="e.g. Please process quickly!"></p>
+<label>Notes
+<p><input class="_oab_form" type="text" id="other" placeholder="e.g. Please process quickly!"></p>
+</label>
 
 <div style="display: none" class="toggle">
 
 <h1>Paper Information</h1>
 
-<label>Paper Title</label>
-<p><input required="required" class="oabutton_form" type="text" id="atitle" placeholder="e.g Evolutionary persistence of DNA methylation for millions of years"></p>
+<label>Paper Title
+<p><input required="required" class="_oab_form" type="text" id="atitle" placeholder="e.g Evolutionary persistence of DNA methylation for millions of years"></p>
+</label>
 
-<label>Journal Title</label>
-<p><input required="required" class="oabutton_form" type="text" id="title" placeholder="e.g Nature"></p>
+<label>Journal Title
+<p><input required="required" class="_oab_form" type="text" id="title" placeholder="e.g Nature"></p>
+</label>
 
-<label>DOI</label>
-<p><input class="oabutton_form" type="text" id="doi" placeholder="e.g 10.1126/scitranslmed.3008973"></p>
+<label>DOI
+<p><input class="_oab_form" type="text" id="doi" placeholder="e.g 10.1126/scitranslmed.3008973"></p>
+</label>
 
-<label>Authors</label>
-<p><input class="oabutton_form" type="text" id="aulast" placeholder="e.g Charles Darwin"></p>
+<label>Authors
+<p><input class="_oab_form" type="text" id="aulast" placeholder="e.g Charles Darwin"></p>
+</label>
 
-<label>Year Published</label>
-<p><input required="required"class="oabutton_form" type="text" id="year" placeholder="e.g 1992"></p>
+<label>Year Published
+<p><input required="required"class="_oab_form" type="text" id="year" placeholder="e.g 1992"></p>
+</label>
 
-<label>Volume</label>
-<p><input class="oabutton_form" type="text" id="volume" placeholder="e.g 37"></p>
+<label>Volume
+<p><input class="_oab_form" type="text" id="volume" placeholder="e.g 37"></p>
+</label>
 
-<label>Issue</label>
-<p><input class="oabutton_form" type="text" id="issue" placeholder="e.g 1"></p>
+<label>Issue
+<p><input class="_oab_form" type="text" id="issue" placeholder="e.g 1"></p>
+</label>
 
-<label>Page</label>
-<p><input class="oabutton_form" type="text" id="pages" placeholder="e.g 355-365"></p>
+<label>Page
+<p><input class="_oab_form" type="text" id="pages" placeholder="e.g 355-365"></p>
+</label>
 
 </div>
 
-<input class="oabutton_find" href="thanks" id="submit" aria-label="submit" style="min-width:150px;" type="submit" value="Submit Request">
+<input class="_oab_button" href="thanks" id="submit" aria-label="submit" style="min-width:150px;" type="submit" value="Submit Request">
 
 <p class="check toggle">> Show paper information</p>
 
@@ -70,3 +83,5 @@ var sid = 'AKfycbwFA_R-0gjzVS9029ByVpduCYJbHLH0ujstNng1aNnRogw1htU';
 var url = 'https://api.openaccessbutton.org/ill/collect/' + sid;
 var fields = ["atitle","title","issn","publisher","aulast","date","volume","issue","pages","doi","pmid","pmcid","notes","crossref_type","url","where","year","email","name","organization","other","reference"];
 </script>
+
+{% include form.html %}
