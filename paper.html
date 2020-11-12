@@ -38,7 +38,22 @@ layout: default
 <p><input class="_oab_form" type="text" id="pages" placeholder="e.g 355-365"></p>
 </label>
 
-<h1>About you</h1>
+<h3 class="form-section">About the request</h3>
+
+<!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date suggested required pattern -->
+<label for="needed-by">When do you need this by?</label>
+<p class="question-description">If we can't deliver your request by this date, it will be cancelled.</p>
+<p><input class="_oab_form" type="date" id="needed-by" min='1899-01-01' max='2022-01-01' required pattern="\d{4}-\d{2}-\d{2}" placeholder="yyyy/mm/dd"></p>
+
+<label>Your Reference Number (if any)
+<p><input class="_oab_form" type="text" id="reference" placeholder="e.g. 02397133-002"></p>
+</label>
+
+<label>Notes
+<p><input class="_oab_form" type="text" id="other" placeholder="e.g. Please process quickly!"></p>
+</label>
+
+<h3 class="form-section">About you</h3>
 
 <label>Institutional Email Address
 <p><input required="required" class="_oab_form" type="email" id="email" placeholder="e.g. your.email@institution.edu"></p>
@@ -50,14 +65,6 @@ layout: default
 
 <label>Library Name
 <p><input required="required" class="_oab_form" type="text" id="organization" placeholder="e.g. Harvard University Library"></p>
-</label>
-
-<label>Your Reference Number (if any)
-<p><input class="_oab_form" type="text" id="reference" placeholder="e.g. 02397133-002"></p>
-</label>
-
-<label>Notes
-<p><input class="_oab_form" type="text" id="other" placeholder="e.g. Please process quickly!"></p>
 </label>
 
 <input class="_oab_form" id="where" type="hidden" value="manual">

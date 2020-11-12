@@ -18,6 +18,13 @@ layout: default
 <p><input required="required" class="_oab_form" type="text" id="organization" placeholder="e.g. Harvard University Library"></p>
 </label>
 
+<h3 class="form-section">About the request</h3>
+
+<!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date suggested required pattern -->
+<label for="needed-by">When do you need this by?</label>
+<p class="question-description">If we can't deliver your request by this date, it will be cancelled.</p>
+<p><input class="_oab_form" type="date" id="needed-by" min='1899-01-01' max='2022-01-01' required pattern="\d{4}-\d{2}-\d{2}" placeholder="yyyy/mm/dd"></p>
+
 <label>Your Reference Number (if any)
 <p><input class="_oab_form" type="text" id="reference" placeholder="e.g. 02397133-002"></p>
 </label>
@@ -28,7 +35,7 @@ layout: default
 
 <div style="display: none" class="toggle">
 
-<h1>Paper Information</h1>
+<h3 class="form-section">Paper Information</h3>
 
 <label>Paper Title
 <p><input required="required" class="_oab_form" type="text" id="atitle" placeholder="e.g Evolutionary persistence of DNA methylation for millions of years"></p>
