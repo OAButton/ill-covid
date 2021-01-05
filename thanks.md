@@ -1,7 +1,7 @@
 ---
 layout: thanks
 ---
-Volunteering librarians around the world will provide the materials in a secure way, as far as they can. Find out more about the volunteers, and find out how to join them at our <a href ="/volunteers">volunteers page</a>.
+Volunteering librarians around the world will provide the materials in a secure way, as fast as they can. <a href ="/volunteers">Find out more about the volunteers, and how to join them</a>.
 
 Please <a href = "mailto:ifladdrs@gmail.com">let us know</a> if you've got any feedback.
 
