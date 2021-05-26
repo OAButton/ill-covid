@@ -4,7 +4,7 @@ layout: volunteers
 
 The RSCVD initiative is made possible by the generous help of volunteers around the world. We sincerely thank and appreciate volunteers for their time, expertise and resources. If you wish to join in volunteering for the initiative, please contact [ifladdrs@gmail.com](mailto:ifladdrs@gmail.com).
 
-Below is the list of volunteers as of June 13th, 2020.
+Below is the list of volunteers as of May 26th, 2021.
 
 **First Name**|**Second Name**|**Library**|**Country**
 :-----:|:-----:|:-----:|:-----:
