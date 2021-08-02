@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<h1>Cancel your request</h1>
+
+<p id="cancelling" style="display: none;">Cancelling...</p>
+
+<script>
+  var rid = P.params('id');
+  if (rid) {
+    P.show('#cancelling');
+    P.ajax(api + '/svc/rscvd/cancel/' + rid, {
+      success: function(rec) {
+        P.html('#cancelling', 'Your request for ' + (rec.atitle ? rec.atitle : (rec.title ? rec.title : rid)) + ' has been cancelled.');
+      }
+    });
+  }
+
+</script>
+

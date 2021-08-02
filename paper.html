@@ -7,35 +7,35 @@ layout: default
 <form id="submission">
 
 <label>Paper Title
-<p><input required="required" class="_oab_form" type="text" id="atitle" placeholder="e.g Evolutionary persistence of DNA methylation for millions of years"></p>
+<p><input required="required" class="_oab_form PForm" type="text" id="atitle" placeholder="e.g Evolutionary persistence of DNA methylation for millions of years"></p>
 </label>
 
 <label>Journal Title
-<p><input required="required" class="_oab_form" type="text" id="title" placeholder="e.g Nature"></p>
+<p><input required="required" class="_oab_form PForm" type="text" id="title" placeholder="e.g Nature"></p>
 </label>
 
 <label>DOI
-<p><input class="_oab_form" type="text" id="doi" placeholder="e.g 10.1126/scitranslmed.3008973"></p>
+<p><input class="_oab_form PForm" type="text" id="doi" placeholder="e.g 10.1126/scitranslmed.3008973"></p>
 </label>
 
 <label>Authors
-<p><input class="_oab_form" type="text" id="aulast" placeholder="e.g Charles Darwin"></p>
+<p><input class="_oab_form PForm" type="text" id="aulast" placeholder="e.g Charles Darwin"></p>
 </label>
 
 <label>Year Published
-<p><input required="required"class="_oab_form" type="text" id="year" placeholder="e.g 1992"></p>
+<p><input required="required"class="_oab_form PForm" type="text" id="year" placeholder="e.g 1992"></p>
 </label>
 
 <label>Volume
-<p><input class="_oab_form" type="text" id="volume" placeholder="e.g 37"></p>
+<p><input class="_oab_form PForm" type="text" id="volume" placeholder="e.g 37"></p>
 </label>
 
 <label>Issue
-<p><input class="_oab_form" type="text" id="issue" placeholder="e.g 1"></p>
+<p><input class="_oab_form PForm" type="text" id="issue" placeholder="e.g 1"></p>
 </label>
 
 <label>Page
-<p><input class="_oab_form" type="text" id="pages" placeholder="e.g 355-365"></p>
+<p><input class="_oab_form PForm" type="text" id="pages" placeholder="e.g 355-365"></p>
 </label>
 
 <h3 class="form-section">About the request</h3>
@@ -43,41 +43,50 @@ layout: default
 <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date suggested required pattern -->
 <label for="needed-by">When do you need this by?</label>
 <p class="question-description">If we can't deliver your request by this date, it will be cancelled.</p>
-<p><input class="_oab_form" type="date" id="needed-by" min='1899-01-01' max='2022-01-01' required pattern="\d{4}-\d{2}-\d{2}" placeholder="yyyy/mm/dd"></p>
+<p><input class="_oab_form PForm" type="date" id="needed-by" min='1899-01-01' max='2022-01-01' required pattern="\d{4}-\d{2}-\d{2}" placeholder="yyyy/mm/dd"></p>
 
 <label>Your Reference Number (if any)
-<p><input class="_oab_form" type="text" id="reference" placeholder="e.g. 02397133-002"></p>
+<p><input class="_oab_form PForm" type="text" id="reference" placeholder="e.g. 02397133-002"></p>
 </label>
 
 <label>Notes
-<p><input class="_oab_form" type="text" id="other" placeholder="e.g. Please process quickly!"></p>
+<p><input class="_oab_form PForm" type="text" id="other" placeholder="e.g. Please process quickly!"></p>
 </label>
 
 <h3 class="form-section">About you</h3>
 
 <label>Institutional Email Address
-<p><input required="required" class="_oab_form" type="email" id="email" placeholder="e.g. your.email@institution.edu"></p>
+<p><input required="required" class="_oab_form PForm" type="email" id="email" placeholder="e.g. your.email@institution.edu"></p>
 </label>
 
 <label>Full Name
-<p><input required="required" class="_oab_form" type="text" id="name" placeholder="e.g. Carla Hayden"></p>
+<p><input required="required" class="_oab_form PForm" type="text" id="name" placeholder="e.g. Carla Hayden"></p>
 </label>
 
 <label>Library Name
-<p><input required="required" class="_oab_form" type="text" id="organization" placeholder="e.g. Harvard University Library"></p>
+<p><input required="required" class="_oab_form PForm" type="text" id="organization" placeholder="e.g. Harvard University Library"></p>
 </label>
 
-<input class="_oab_form" id="where" type="hidden" value="manual">
+<input class="_oab_form PForm" id="where" type="hidden" value="manual">
 
-<input class="_oab_button" href="/thanks" id="submit" aria-label="submit" style="min-width:150px;" type="submit" value="Submit Request">
+<input class="_oab_button PSave" href="/thanks" id="submit" aria-label="submit" style="min-width:150px;" type="submit" value="Submit Request">
 <p><i>If you have trouble submitting <a href="mailto:joe@openaccessbutton.org">let us know</a>.</i></p>
 
 </form>
 
 <script>
-sid = 'AKfycbwFA_R-0gjzVS9029ByVpduCYJbHLH0ujstNng1aNnRogw1htU';
-url = 'https://api.openaccessbutton.org/ill/collect/' + sid;
-fields = [];
-</script>
+P.edit({url: api + '/svc/rscvd/form'});
 
-{% include form.html %}
+var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth() + 1;
+var yyyy = today.getFullYear();
+document.getElementById("needed-by").setAttribute("min", yyyy + '-' + (mm < 10 ? 0 : '') + mm + '-' + (dd < 10 ? 0 : '') + dd);
+
+// the old way this worked was setting these settings:
+// sid = 'AKfycbwFA_R-0gjzVS9029ByVpduCYJbHLH0ujstNng1aNnRogw1htU';
+// url = 'https://api.openaccessbutton.org/ill/collect/' + sid;
+// fields = [];
+// then doing a template include for the form html include
+
+</script>

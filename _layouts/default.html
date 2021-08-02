@@ -8,12 +8,25 @@
     <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+    {% if site.github.repository_name == 'rscvd-dev' %}
+    <script>window.api = 'https://bg.beta.oa.works';</script>
+    <script src="https://bg.beta.oa.works/client/pradm.min.js?v={{ site.github.build_revision }}"></script>
+    <script src="https://bg.beta.oa.works/client/pradmLogin.min.js?v={{ site.github.build_revision }}"></script>
+    <script src="https://bg.beta.oa.works/client/pradmEdit.min.js?v={{ site.github.build_revision }}"></script>
+    {% else %}
+    <script>window.api = 'https://api.oa.works';</script>
+    <script src="https://api.oa.works/client/pradm.min.js?v={{ site.github.build_revision }}"></script>
+    <script src="https://api.oa.works/client/pradmLogin.min.js?v={{ site.github.build_revision }}"></script>
+    <script src="https://api.oa.works/client/pradmEdit.min.js?v={{ site.github.build_revision }}"></script>
+    {% endif %}
+
 {% seo %}
   </head>
 
   <body>
 
     <!-- ALERT BANNER -->
+    
     <!--
     <div id="alert_content_wrap" class="outer">
       <section id="alert_content" class="inner">
@@ -21,6 +34,7 @@
       </section>
     </div>
     -->
+    
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
