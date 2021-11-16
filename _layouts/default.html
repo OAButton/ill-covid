@@ -10,15 +10,12 @@
 
     {% if site.github.repository_name == 'rscvd-dev' %}
     <script>window.api = 'https://bg.beta.oa.works';</script>
-    <script src="https://bg.beta.oa.works/client/pradm.min.js?v={{ site.github.build_revision }}"></script>
-    <script src="https://bg.beta.oa.works/client/pradmLogin.min.js?v={{ site.github.build_revision }}"></script>
-    <script src="https://bg.beta.oa.works/client/pradmEdit.min.js?v={{ site.github.build_revision }}"></script>
     {% else %}
     <script>window.api = 'https://api.oa.works';</script>
-    <script src="https://api.oa.works/client/pradm.min.js?v={{ site.github.build_revision }}"></script>
-    <script src="https://api.oa.works/client/pradmLogin.min.js?v={{ site.github.build_revision }}"></script>
-    <script src="https://api.oa.works/client/pradmEdit.min.js?v={{ site.github.build_revision }}"></script>
     {% endif %}
+    <script src="/assets/js/pradm.min.js?v={{ site.github.build_revision }}"></script>
+    <script src="/assets/js/pradmLogin.min.js?v={{ site.github.build_revision }}"></script>
+    <script src="/assets/js/pradmEdit.min.js?v={{ site.github.build_revision }}"></script>
 
 {% seo %}
   </head>
