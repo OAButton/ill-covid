@@ -402,6 +402,24 @@ Full-Width Styles
     border:2px solid #00492c;
   }
 
+._oab_button {
+    color:#FFF;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: #00492c;
+}
+
 ._oab_form {
     display: block;
     width: 90%;
